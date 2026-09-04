@@ -11,16 +11,37 @@
             font-size: 1em;
             background-color: #FAE7B5; <!--,#f0f0f0, #DEB887, #DEB887 ,#D2B48C, #E0C068, #F4A460, #C8A165-->
         }
-        
-        .top-right {
-            position: absolute;
-            top: 10px;
-            right: 85px;
-            width: 250px; /* Adjust the width as needed */
-            height: auto;
-            
-        }
-        
+
+		.intro {
+		    display: flex;
+		    align-items: flex-start;
+		    gap: 40px;
+		}
+		
+		.intro-text {
+		    flex: 0 1 auto;
+		}
+	
+		.profile-pic {
+	    	width: 200px;
+	    	height: auto;
+	    	margin-top: 10px;
+		}
+	
+		/* Mobile */
+		@media (max-width: 700px) {
+	    	.intro {
+	        display: block;
+	    	}
+	
+	    	.profile-pic {
+	        	display: block;
+	        	width: 160px;
+	        	margin: 20px auto;
+	    	}
+		}
+
+		
 	h2 {
       		font-size: 1.2rem;
       		color: magenta;
@@ -63,6 +84,10 @@
     </style>
 </head>
 <body>
+<div class="intro">
+
+    <div class="intro-text">
+
     <p> Welcome to my homepage! </p>
     <p> My name is Matias Villagra and I am a PhD Student in Operations Research <br> at <a href="https://ieor.columbia.edu/" target="_blank">IEOR Columbia University</a>.<br>
     
@@ -81,36 +106,15 @@
         <br> strength of mathematical relaxations, with the goal of developing 
         <br> symmetry-aware algorithms.
     </p>
-    
-    <!--
-    <p> I work on large-scale and computationally challenging mixed-integer <br> nonlinear programs, with a focus on the fundamental AC Optimal Power<br> Flow problem and its applications in operations, planning, and pricing.
-    </p>
-    <p>
-        I am also interested in the role of symmetry in optimization, <br>
-        particularly in integer programming, with the aim of both understanding
-        <br>
-        its impact on solvers and designing symmetry-aware algorithms.
-    </p>
-    
-    <!-- 
-    <p> I develop convex relaxations for large-scale and computationally challenging optimization problems. <br>
-    Much of my research focuses on power grid optimization -- in particular the fundamental AC Optimal <br>
-    Power Flow problem -- with applications in operations, planning, and pricing.</p>
-    -->
-    
-    <!-- <p> Building on my background in integer and linear programming, I also investigate the theoretical <br>
-    foundations of how symmetries affect the strength of classical convex relaxations for integer <br>
-    programs, such as lift-and-project hierarchies. </p>
-    
-    -->
-    
-    <!-- <p>Through methodological innovation and computational implementation, my work advances the theory and practice of optimization.<p> -->
-    
+        
     <p>I am very fortunate to be co-advised by <a href="https://www.apam.columbia.edu/faculty/daniel-bienstock" target="_blank">Dan Bienstock</a> and <a href="https://www.columbia.edu/~yf2414/" target="_blank">Yuri Faenza</a>.</p>
     <p>Reach me at: mjv2153 [at] columbia [.] edu</p>
-    <!-- <p>In the meantime, admire this picture of FRITO:</p> -->
-    <!--<h1>Main Title</h1>-->
+    </div>
 
+    <img class="profile-pic" src="images/profile.jpg" alt="Matias Villagra">
+
+</div>
+	
     
     <section id="news">
     <h2>News</h2>
