@@ -11,36 +11,37 @@
             font-size: 1em;
             background-color: #FAE7B5; <!--,#f0f0f0, #DEB887, #DEB887 ,#D2B48C, #E0C068, #F4A460, #C8A165-->
         }
-
 		.intro {
 		    display: flex;
 		    align-items: flex-start;
 		    gap: 40px;
+		    max-width: 900px;
 		}
 		
 		.intro-text {
-		    flex: 0 1 auto;
+		    flex: 1;
+		    min-width: 0;
 		}
-	
+		
 		.profile-pic {
-	    	width: 200px;
-	    	height: auto;
-	    	margin-top: 10px;
+		    width: 200px;
+		    height: auto;
+		    flex-shrink: 0;
 		}
-	
-		/* Mobile */
+		
 		@media (max-width: 700px) {
-	    	.intro {
-	        display: block;
-	    	}
-	
-	    	.profile-pic {
-	        	display: block;
-	        	width: 160px;
-	        	margin: 20px auto;
-	    	}
+		    .intro {
+		        display: block;
+		    }
+		
+		    .profile-pic {
+		        display: block;
+		        width: 160px;
+		        margin: 20px auto;
+		    }
 		}
 
+	
 		
 	h2 {
       		font-size: 1.2rem;
