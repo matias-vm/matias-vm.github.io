@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>matias</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
@@ -36,8 +37,8 @@
 		}
 		
 		.sidebar {
-		    width: 140px;
-		    flex-shrink: 0;
+		    width: 130px;
+		    flex: 0 0 130px;
 		    padding-top: 20px;
 		}
 		
@@ -46,20 +47,41 @@
 		    font-size: 1.2rem;
 		    font-weight: bold;
 		    color: magenta;
-		    margin-bottom: 30px;
+		    margin-bottom: 35px;
 		}
 		
-		.main-content {
-		    flex: 1;
-		    min-width: 0;
-		}
-
 		.sidebar a:visited,
 		.sidebar a:hover {
 		    color: magenta;
 		}
 		
+		.main-content {
+		    flex: 1;
+		    min-width: 0;
+		    max-width: 850px;
+		}
+		
 		@media (max-width: 700px) {
+		    .page {
+		        display: block;
+		    }
+		
+		    .sidebar {
+		        width: auto;
+		        padding-top: 10px;
+		        margin-bottom: 20px;
+		    }
+		
+		    .sidebar a {
+		        display: inline-block;
+		        margin-right: 30px;
+		        margin-bottom: 0;
+		    }
+		
+		    .main-content {
+		        max-width: 100%;
+		    }
+		
 		    .intro {
 		        display: block;
 		    }
@@ -69,26 +91,8 @@
 		        width: 160px;
 		        margin: 20px auto;
 		    }
-			    .page {
-				display: block;
-			}
-		
-			.sidebar {
-				width: auto;
-				padding-top: 10px;
-				margin-bottom: 20px;
-			}
-		
-			.sidebar a {
-				display: inline-block;
-				margin-right: 15px;
-				margin-bottom: 0;
-			}
-			
 		}
 
-
-	
 		
 	h2 {
       		font-size: 1.2rem;
