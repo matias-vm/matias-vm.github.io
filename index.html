@@ -28,6 +28,27 @@
 		    height: auto;
 		    flex-shrink: 0;
 		}
+
+		.page {
+		    display: flex;
+		    gap: 40px;
+		}
+		
+		.sidebar {
+		    width: 100px;
+		    flex-shrink: 0;
+		    padding-top: 20px;
+		}
+		
+		.sidebar a {
+		    display: block;
+		    margin-bottom: 15px;
+		}
+		
+		.main-content {
+		    flex: 1;
+		    min-width: 0;
+		}
 		
 		@media (max-width: 700px) {
 		    .intro {
@@ -39,7 +60,24 @@
 		        width: 160px;
 		        margin: 20px auto;
 		    }
+			.page {
+    			display: block;
+			}
+			
+			.sidebar {
+			    width: auto;
+			    padding-top: 10px;
+			    margin-bottom: 20px;
+			}
+			
+			.sidebar a {
+			    display: inline-block;
+			    margin-right: 15px;
+			    margin-bottom: 0;
+			}
+			
 		}
+
 
 	
 		
@@ -85,6 +123,17 @@
     </style>
 </head>
 <body>
+
+	
+<nav class="sidebar">
+	<a href="/pages/research.html">Research</a>
+	<a href="/pages/teaching.html">Teaching</a>
+	<a href="/pages/awards.html">Awards</a>
+</nav>
+
+<div class="main-content">
+
+	
 <div class="intro">
 
     <div class="intro-text">
@@ -171,7 +220,8 @@
     </ul>
     </section>
   
-  
+
+	<!--
     <section id="research">
     <h2 class="projects-link"><a href="/pages/research.html">Research</a></h2>
     </section>
@@ -183,9 +233,9 @@
     <section id="teaching">
     <h2 class="projects-link"><a href="/pages/teaching.html">Teaching</a></h2>
     </section>
+	-->
   
 
-  
     
     <span class="big-text"></span>
 	
@@ -202,9 +252,12 @@
     </p>
     
     <footer>
-    <p class="last-updated">Last updated: January, 2026</p>
+    <p class="last-updated">Last updated: August, 2026</p>
     </footer>
-    
+
+    </div>
+</div>
+
 </body>
 
 
